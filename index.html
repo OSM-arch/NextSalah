@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon -->
+    <link rel="icon" type="image/ico" href="/favicon/favicon.ico"/>
+    <!-- Style & Bootsrap -->
+    <link rel="stylesheet" href="/Bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="/Bootstrap/bootstrap.min.js"></script> -->
+    <!-- 'Poppins font-family' -->
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+    <!-- Title -->
+    <title>NextSalah</title>
+</head>
+<body>
+    <header>
+      <nav class="navbar navbar-expand-sm" aria-label="Head navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="/favicon/favicon.ico" alt="mosque favicon"></a>
+          <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    
+          <div class="collapse navbar-collapse" id="navbarsExample03">
+            <ul class="navbar-nav me-auto mb-2 mb-sm-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+            </ul>
+            <div class="search-icon-container m-1">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" 
+                   fill="currentColor"
+                   class="bi bi-search m-2"
+                   viewBox="0 0 16 16"
+                   style="color: whitesmoke;cursor: pointer;">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+              </svg>             
+            </div>
+            <form role="search">
+              <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+            </form>
+          </div>
+        </div>
+      </nav>    
+    </header>
+
+    <main class="container-fluid d-flex mt-4">
+      <div class="card container-fluid">
+        <div class="card-header d-flex justify-content-between p-2" >
+          <div class="city-container align-content-center">Prayer times in <span class="city">city</span></div>
+          <div class="month-year-container">avril 2025- Shawwal 1446</div>
+        </div>
+        <div class="card-body container-fluid">
+          <div class="body-header mb-5 d-flex align-items-center">
+            <label for="calculationMethod" class="form-label w-25">Calculation Method: </label>
+            <select class="form-select w-75" id="calculationMethod" name="calculationMethod">
+              <option value="0">Muslim World League</option>
+              <option value="1">Islamic Society of North America</option>
+              <option value="2">Egyptian General Authority of Survey</option>
+              <option value="3">Umm Al-Qura University, Makkah</option>
+              <option value="4">University of Islamic Sciences, Karachi</option>
+              <option value="5">Institute of Geophysics, University of Tehran</option>
+              <option value="6">Shia Ithna-Ashari, Leva Institute, Qum</option>
+              <option value="7">Gulf Region</option>
+              <option value="8">Kuwait</option>
+              <option value="9">Qatar</option>
+              <option value="10">Majlis Ugama Islam Singapura, Singapore</option>
+              <option value="11">Union Organization islamic de France</option>
+              <option value="12">Diyanet İşleri Başkanlığı, Turkey</option>
+              <option value="13">Spiritual Administration of Muslims of Russia</option>
+              <option value="14">Moonsighting Committee</option>
+              <option value="15">Dubai, UAE - Batoul Apps 18.2° method</option>
+              <option value="16">Jabatan Kemajuan Islam Malaysia (JAKIM)</option>
+              <option value="17">Tunisia</option>
+              <option value="18">Algeria</option>
+              <option value="19">Kementerian Agama Republik Indonesia</option>
+              <option value="20">Morocco</option>
+              <option value="21">Comunidate Islamica de Lisboa (Portugal)</option>
+            </select>
+          </div>    
+          <div class="table-responsive">
+            <table class="table table-borderless custom-table text-center align-middle">
+              <thead class="table-light">
+                <tr>
+                  <th scope="col"></th>
+                  <th scope="col">Sobh (Fajr)</th>
+                  <th scope="col">Chorouq</th>
+                  <th scope="col">Dohr</th>
+                  <th scope="col">Asr</th>
+                  <th scope="col">Maghreb</th>
+                  <th scope="col">Icha</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Tue. Apr. 1</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Wed. Apr. 2</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>              
+        </div>
+        <div class="card-footer"></div>
+      </div>
+      <div class="card container-fluid">
+        <div class="card-header"></div>
+        <div class="card-body"></div>
+        <div class="card-footer"></div>
+      </div>
+    </main>
+    <!-- <div class="container">
+        <h1>Prayer Times</h1>
+        <input type="text" id="city-input" placeholder="Enter your city" />
+        <button id="get-times">Get Prayer Times</button>
+    
+        <div id="results" class="prayer-times">
+          Fajr, Dhuhr, Asr, Maghrib, Isha will appear here
+        </div>
+        </div> 
+    -->
+    <script src="/Bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="/app.js"></script>
+</body>
+</html>
