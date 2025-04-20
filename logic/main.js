@@ -1,3 +1,21 @@
+// Initialize city params
+async function initParams() {
+    document.querySelector('.city').textContent = 'Rabat';
+
+    prayersTimeObject = await getPrayerTimes('Rabat', 'Morocco', '20');
+    displayPrayerTimes();
+
+    timingsArray = await getMonthPrayerTime('Rabat', 'Morocco', '20', monthYear);
+    displayMonthPrayersTable();
+}
+document.addEventListener('DOMContentLoaded', () => {
+    initParams();
+});
+
+
+
+
+
 // SET DATE
 import { setDate } from "./setDate.js";
 let monthYear = [];

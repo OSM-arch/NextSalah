@@ -58,7 +58,7 @@ select.form-select option:hover,
 select.form-select option:checked {
     background-color: #d4af37;
     color: #fff;
-} 
+}
 
 /* Table */
 .custom-table {

@@ -3,7 +3,7 @@ export function setDate() {
     document.querySelector('.date').textContent = `${weekDay(date.getDay())}, ${monthDay(date.getMonth())}, ${date.getDate()}, ${date.getFullYear()}`;
     document.querySelector('.month-Year').textContent = `${monthDay(date.getMonth())} ${date.getFullYear()}`;
 
-    return [months.indexOf(monthDay(date.getMonth()))+1, date.getFullYear(), date.getMonth()+1];
+    return [months.indexOf(monthDay(date.getMonth()))+1, date.getFullYear(), date.getDate()];
 }
 
 function weekDay(day) {
