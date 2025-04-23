@@ -1,3 +1,5 @@
+/* Light Mode */
+
 body {
     font-family: 'Poppins', sans-serif;
     background: #eef2f7;
@@ -120,4 +122,32 @@ select.form-select option:checked {
     text-align: center;
     letter-spacing: 1.5px;
     color: #c09d77;
+}
+
+
+/*  */
+.card-container {
+    display: flex !important;
+}
+
+.h-fitcontent {
+    height: fit-content !important;
+}
+
+.card-75 {
+    flex: 3 1 75% !important;
+}
+
+.card-25 {
+    flex: 1 1 25% !important;
+}
+
+/* Optional: stack on small screens */
+@media (max-width: 1133px) {
+    .card-container {
+        flex-wrap: wrap-reverse !important;
+    }
+    .card-75, .card-25 {
+        flex: 1 1 100% !important;
+    }
 }

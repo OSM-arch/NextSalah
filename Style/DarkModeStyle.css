@@ -1,0 +1,141 @@
+/* Dark Mode */
+body.dark-mode {
+    font-family: 'Poppins', sans-serif;
+    background: #121212; /* Dark background */
+}
+
+/* navbar style */
+nav.dark-mode {
+    border-bottom: 5px solid #d4af37;
+}
+
+/* search icon */
+.search-icon-container.dark-mode {
+    border: none;
+    background: transparent;
+}
+@media screen and (min-width:580px) {
+    .search-icon-container.dark-mode:hover {
+        border-radius: 50%;
+        background-color: #3a3a3a; /* Darker background for hover */
+    }
+    .search-icon-container.dark-mode:hover svg {
+        color: #ffffff !important; /* Light icons */
+    }
+}
+
+/* Select */
+select.form-select.dark-mode {
+    background-color: transparent;
+    border-color: #d4af37;
+    color: #ffffff;
+}
+select.form-select.dark-mode option {
+    background-color: #333333;
+    color: #ffffff;
+} 
+select.form-select.dark-mode option:hover,
+select.form-select.dark-mode option:checked {
+    background-color: #d4af37;
+    color: #fff;
+}
+
+/* Table */
+.custom-table.dark-mode {
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #ffffff; /* Light text */
+    border-collapse: collapse;
+}
+.custom-table.dark-mode thead th {
+    padding: 0.5rem;
+    vertical-align: bottom;
+    border-bottom: 5px solid #d4af37;
+}
+.custom-table.dark-mode td {
+    padding: 0.4rem;
+    vertical-align: center;
+}
+.custom-table.dark-mode thead {
+    color: #ffffff;
+}
+.custom-table.dark-mode tbody tr td {
+    color: #c09d77; /* Light golden color */
+}
+.custom-table.dark-mode tbody tr td:first-child {
+    color: inherit;
+}
+.custom-table.dark-mode > tbody > tr:nth-of-type(odd) {
+    background-color: #333333;
+}
+.custom-table.dark-mode > tbody > tr:nth-of-type(even) {
+    background-color: #444444;
+}
+.custom-table.dark-mode > tbody > tr:hover {
+    background-color: #555555;
+}
+.custom-table.dark-mode tbody .tr-active {
+    font-weight: bold;
+    border-left: 5px solid;
+    border-right: 5px solid;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    border-color: #d4af37;
+}
+.custom-table.dark-mode tbody tr .td-active {
+    font-weight: bold;
+}
+
+/* Card */
+.day-prayer.dark-mode {
+    margin: 15px 0;
+}
+.day-prayer.dark-mode .prayer-time-container {
+    display: flex;
+    justify-content: space-between;
+    line-height: 30px;
+    padding: 2px 5px;
+}
+.day-prayer.dark-mode .prayer-time-container .prayer {
+    width: 75%;
+    display: inline-block;
+}
+.day-prayer.dark-mode .prayer-time-container .salat-time {
+    width: 25%;
+    text-align: center;
+    letter-spacing: 1.5px;
+    color: #c09d77; /* Golden color for dark mode */
+}
+
+/* Card layout */
+.card.dark-mode {
+    background-color: #333333;
+    color: #ffffff;
+    border-color: #d4af37;
+}
+
+.card-container.dark-mode {
+    display: flex !important;
+}
+
+.h-fitcontent.dark-mode {
+    height: fit-content !important;
+}
+
+.card-75.dark-mode {
+    flex: 3 1 75% !important;
+}
+
+.card-25.dark-mode {
+    flex: 1 1 25% !important;
+}
+
+/* Optional: stack on small screens */
+@media (max-width: 1133px) {
+    .card-container.dark-mode {
+        flex-wrap: wrap-reverse !important;
+    }
+    .card-75.dark-mode, .card-25.dark-mode {
+        flex: 1 1 100% !important;
+    }
+}
