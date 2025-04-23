@@ -1,4 +1,4 @@
-const APIkey = ''; //API-KEY-HERE
+const APIkey = 'ab02c54d46c84248b53f11ab1f196d3f'; //API-KEY-HERE
 
 async function Country() {
     const city = document.getElementById('cityInput').value;
